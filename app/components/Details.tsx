@@ -113,7 +113,7 @@ const Details = ({ feedback }: { feedback: Feedback }) => {
         <AccordionItem id="tone-style">
           <AccordionHeader itemId="tone-style">
             <CategoryHeader
-              title="Tone & Style"
+              title="Nada & Gaya"
               categoryScore={feedback.toneAndStyle.score}
             />
           </AccordionHeader>

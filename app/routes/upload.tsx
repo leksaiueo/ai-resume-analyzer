@@ -64,7 +64,7 @@ const Upload = () => {
       uploadedFile.path,
       prepareInstructions({ jobTitle, jobDescription })
     );
-    if (!feedback) return setStatusText("Error: Gagal analisa resume");
+    if (!feedback) return setStatusText("Error: Failed to analyze resume");
 
     const feedbackText =
       typeof feedback.message.content === "string"
@@ -122,7 +122,7 @@ const Upload = () => {
                 <input
                   type="text"
                   name="company-name"
-                  placeholder="Company Name"
+                  placeholder="Nama Perusahaan"
                   id="company-name"
                 />
               </div>
@@ -131,7 +131,7 @@ const Upload = () => {
                 <input
                   type="text"
                   name="job-title"
-                  placeholder="Job Title"
+                  placeholder="Posisi Pekerjaan"
                   id="job-title"
                 />
               </div>
@@ -140,7 +140,7 @@ const Upload = () => {
                 <textarea
                   rows={5}
                   name="job-description"
-                  placeholder="Job Description"
+                  placeholder="Deskripsi Pekerjaan"
                   id="job-description"
                 />
               </div>
