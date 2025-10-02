@@ -3,18 +3,18 @@ interface ScoreBadgeProps {
 }
 
 const ScoreBadge: React.FC<ScoreBadgeProps> = ({ score }) => {
-  let badgeColor = '';
-  let badgeText = '';
+  let badgeColor = "";
+  let badgeText = "";
 
   if (score > 70) {
-    badgeColor = 'bg-badge-green text-green-600';
-    badgeText = 'Strong';
+    badgeColor = "bg-badge-green text-green-600";
+    badgeText = "Keren";
   } else if (score > 49) {
-    badgeColor = 'bg-badge-yellow text-yellow-600';
-    badgeText = 'Good Start';
+    badgeColor = "bg-badge-yellow text-yellow-600";
+    badgeText = "Lumayan";
   } else {
-    badgeColor = 'bg-badge-red text-red-600';
-    badgeText = 'Needs Work';
+    badgeColor = "bg-badge-red text-red-600";
+    badgeText = "Butuh Perbaikan";
   }
 
   return (
