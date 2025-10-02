@@ -228,17 +228,19 @@ export const AIResponseFormat = `
 export const prepareInstructions = ({
   jobTitle,
   jobDescription,
+  AIResponseFormat,
 }: {
   jobTitle: string;
   jobDescription: string;
+  AIResponseFormat: string;
 }) =>
-  `Anda adalah ahli dalam ATS (Applicant Tracking System) dan analisis resume.
-  Silakan analisis dan nilai resume ini serta sarankan cara untuk memperbaikinya.
-  Penilaian dapat rendah jika resume buruk.
-  Jadilah menyeluruh dan detail. Jangan takut untuk menunjukkan kesalahan atau area yang perlu diperbaiki.
-  Jika ada banyak yang perlu diperbaiki, jangan ragu untuk memberikan skor rendah. Ini untuk membantu pengguna memperbaiki resume mereka.
-  Jika tersedia, gunakan deskripsi pekerjaan untuk pekerjaan yang dilamar pengguna untuk memberikan umpan balik yang lebih detail.
-  Jika disediakan, pertimbangkan deskripsi pekerjaan.
+  `Anda adalah seorang ahli dalam ATS (Applicant Tracking System) dan analisis resume.
+  Silakan analisis dan nilai resume ini serta sarankan cara untuk meningkatkannya.
+  Penilaian bisa rendah jika resume buruk.
+  Jadilah teliti dan detail. Jangan ragu untuk menunjukkan kesalahan atau area yang perlu diperbaiki.
+  Jika banyak yang perlu diperbaiki, jangan ragu memberikan nilai rendah. Ini untuk membantu pengguna memperbaiki resume mereka.
+  Jika tersedia, gunakan deskripsi pekerjaan untuk pekerjaan yang dilamar pengguna agar memberikan umpan balik yang lebih rinci.
+  Jika diberikan, pertimbangkan deskripsi pekerjaan tersebut.
   Judul pekerjaan adalah: ${jobTitle}
   Deskripsi pekerjaan adalah: ${jobDescription}
   Berikan umpan balik menggunakan format berikut: ${AIResponseFormat}

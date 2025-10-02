@@ -1,28 +1,15 @@
-## Getting Started
+**Installation**
 
-### Installation
-
-Install the dependencies:
+Install the project dependencies using npm:
 
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+**Running the Project**
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
